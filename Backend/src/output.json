@@ -1,0 +1,123 @@
+{
+  "matchScore": 85,
+  "title": "Software Engineer",
+  "technicalQuestions": [
+    {
+      "question": "Can you explain how you would optimize a slow-running SQL query?",
+      "intention": "Tests database performance tuning and indexing knowledge.",
+      "answer": "Explain the use of EXPLAIN ANALYZE, identifying full table scans, adding appropriate indexes, optimizing joins, and denormalizing if necessary."
+    },
+    {
+      "question": "What is the difference between REST and GraphQL, and when would you choose one over the other?",
+      "intention": "Evaluates API design knowledge and architectural decision-making.",
+      "answer": "Contrast REST's resource-based approach with GraphQL's query-based approach. Focus on over-fetching/under-fetching data and complex data requirements."
+    },
+    {
+      "question": "Describe the lifecycle of an HTTP request from the browser to the server and back.",
+      "intention": "Assesses understanding of networking and web fundamentals.",
+      "answer": "Cover DNS resolution, TCP handshake, TLS, server processing, database interaction, and response headers/status codes."
+    },
+    {
+      "question": "How do you handle error states and edge cases in your code to ensure robust production applications?",
+      "intention": "Tests defensive programming habits and reliability mindset.",
+      "answer": "Discuss input validation, graceful degradation, centralized logging, and implementing try-catch blocks with meaningful error messages."
+    },
+    {
+      "question": "Explain a scenario where you had to debug a complex asynchronous issue.",
+      "intention": "Assesses problem-solving skills in modern concurrent programming environments.",
+      "answer": "Describe a race condition or promise rejection chain. Explain the tools used (debugger, tracing) and the logical process taken to isolate and fix the root cause."
+    }
+  ],
+  "behavioralQuestions": [
+    {
+      "question": "Describe a time you received critical feedback on your code or design. How did you react?",
+      "intention": "Evaluates coachability and team fit.",
+      "answer": "Use STAR: Situation - code review feedback. Task - reconcile differences. Action - listened objectively, researched alternatives, implemented improvements. Result - better code quality and professional growth."
+    },
+    {
+      "question": "Tell me about a time you had to manage conflicting priorities between stakeholders.",
+      "intention": "Tests communication and negotiation skills.",
+      "answer": "Use STAR: Situation - two competing features. Task - resolve deadline pressure. Action - analyzed business impact and technical effort, communicated tradeoffs. Result - negotiated a phased delivery that satisfied both parties."
+    },
+    {
+      "question": "Give an example of how you contributed to a positive team culture.",
+      "intention": "Assesses interpersonal skills and collaboration.",
+      "answer": "Use STAR: Situation - team morale was low. Task - improve engagement. Action - initiated knowledge sharing sessions and organized code demos. Result - team became more cohesive and technically aligned."
+    }
+  ],
+  "skillGaps": [
+    {
+      "skill": "Cloud Infrastructure (AWS/Azure)",
+      "severity": "medium"
+    },
+    {
+      "skill": "System Design at Scale",
+      "severity": "medium"
+    }
+  ],
+  "preparationPlan": [
+    {
+      "day": 1,
+      "focus": "Gap Analysis",
+      "tasks": [
+        "Audit resume against JD",
+        "List top 5 technical weaknesses",
+        "Gather documentation on missing cloud tools"
+      ]
+    },
+    {
+      "day": 2,
+      "focus": "Core Technical Review",
+      "tasks": [
+        "Review database indexing strategies",
+        "Refresher on API architectural patterns",
+        "Practice solving 2 LeetCode style problems"
+      ]
+    },
+    {
+      "day": 3,
+      "focus": "System Design",
+      "tasks": [
+        "Study load balancing patterns",
+        "Review caching strategies",
+        "Draw architecture for a hypothetical app"
+      ]
+    },
+    {
+      "day": 4,
+      "focus": "Behavioral Storytelling",
+      "tasks": [
+        "Draft 3 STAR stories for challenges",
+        "Prepare 2 examples of leadership",
+        "Practice articulating feedback reception"
+      ]
+    },
+    {
+      "day": 5,
+      "focus": "Company Research",
+      "tasks": [
+        "Review company product pages",
+        "Analyze recent company news",
+        "Prepare 3 insightful questions for the interviewer"
+      ]
+    },
+    {
+      "day": 6,
+      "focus": "Mock Interview",
+      "tasks": [
+        "Record mock responses to technical questions",
+        "Review recordings for filler words",
+        "Refine technical explanations for clarity"
+      ]
+    },
+    {
+      "day": 7,
+      "focus": "Final Polish",
+      "tasks": [
+        "Review resume high-level project summaries",
+        "Verify technical tools for remote interview",
+        "Get adequate sleep and mental prep"
+      ]
+    }
+  ]
+}
