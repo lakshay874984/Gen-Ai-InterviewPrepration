@@ -1,0 +1,22 @@
+# Backend-only render.yaml
+# Use this if deploying backend separately
+services:
+  - type: web
+    name: interview-backend
+    env: node
+    plan: free
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: FRONTEND_URL
+        value: https://your-frontend-url.com
+      - key: MONGO_URI
+        value: your-mongo-connection-string
+      - key: JWT_SECRET
+        value: your-jwt-secret-key
