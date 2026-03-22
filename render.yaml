@@ -4,14 +4,20 @@ services:
     env: node
     plan: standard
     branch: main
-    buildCommand: npm run build:backend
-    startCommand: npm start
-    healthCheckPath: /
+    nodeVersion: 20.11.0
+    buildCommand: cd Backend && npm ci
+    startCommand: cd Backend && npm start
+    healthCheckPath: /health
+    preDeployCommand: cd Backend && npm ci
     envVars:
       - key: NODE_ENV
         value: production
+      - key: NODE_OPTIONS
+        value: --enable-source-maps
       - key: PORT
         value: 3000
+      - key: HOST
+        value: 0.0.0.0
       - key: MONGO_URI
         sync: false
       - key: JWT_SECRET
@@ -26,7 +32,7 @@ services:
     name: interview-frontend
     plan: free
     branch: main
-    buildCommand: npm run build:frontend
+    buildCommand: cd Frontend && npm ci && npm run build
     staticPublishPath: Frontend/dist
     envVars:
       - key: VITE_BACKEND_URL

@@ -13,6 +13,15 @@ app.use(
   })
 );
 
+// Health check endpoint for Render/Docker
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "ok", timestamp: new Date().toISOString() })
+})
+
+// Root endpoint
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "Interview API Server Running", version: "1.0.0" })
+})
 
 const authRouter = require("./routes/auth.routes")
 app.use("/api/auth", authRouter)
