@@ -1,0 +1,27 @@
+{
+  "name": "yt-genai-fullstack",
+  "version": "1.0.0",
+  "description": "Full-stack interview preparation application with AI",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd Backend && npm install && cd ../Frontend && npm install && cd ..",
+    "dev": "node scripts/dev.js",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd Backend && npm install && cd ..",
+    "build:frontend": "cd Frontend && npm install && npm run build && cd ..",
+    "start": "node scripts/start.js",
+    "lint": "cd Frontend && npm run lint && cd .."
+  },
+  "keywords": [
+    "react",
+    "express",
+    "mongodb",
+    "interview",
+    "ai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "18.x"
+  }
+}
