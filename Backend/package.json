@@ -24,8 +24,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx nodemon server.js",
     "start": "node server.js",
-    "build": "echo \"Build complete\"",
-    "postinstall": "echo \"Dependencies installed successfully\""
+    "build": "echo \"Backend ready for deployment\""
   },
   "keywords": [],
   "author": "",
