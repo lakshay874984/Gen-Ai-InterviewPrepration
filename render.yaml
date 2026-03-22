@@ -3,12 +3,12 @@ services:
     name: interview-backend
     env: node
     plan: standard
+    root: Backend
     branch: main
     nodeVersion: 20.11.0
-    buildCommand: cd Backend && npm ci
-    startCommand: cd Backend && npm start
+    buildCommand: npm install
+    startCommand: npm start
     healthCheckPath: /health
-    preDeployCommand: cd Backend && npm ci
     envVars:
       - key: NODE_ENV
         value: production
@@ -30,10 +30,11 @@ services:
 
   - type: static_site
     name: interview-frontend
+    root: Frontend
     plan: free
     branch: main
-    buildCommand: cd Frontend && npm ci && npm run build
-    staticPublishPath: Frontend/dist
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
     envVars:
       - key: VITE_BACKEND_URL
         sync: false
