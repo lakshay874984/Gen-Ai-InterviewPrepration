@@ -1,3 +1,9 @@
+// Polyfill for Node.js compatibility
+if (typeof global.process === 'undefined') {
+  global.process = { getBuiltinModule: () => {} };
+}
+
+require("dotenv").config()
 require("dotenv").config()
 
 const app = require("./src/app")
