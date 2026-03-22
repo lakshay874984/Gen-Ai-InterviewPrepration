@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API_URL = axios.create({ baseURL: 'http://localhost:3000/api/auth' ,
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+
+const API_URL = axios.create({ baseURL: `${BACKEND_URL}/api/auth` ,
     withCredentials: true // This is important to include cookies in the request
 }
 ); // Change this to your backend URL
